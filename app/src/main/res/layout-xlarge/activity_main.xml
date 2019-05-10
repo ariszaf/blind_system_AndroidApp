@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.psilos.automationsystem.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Running Parameters"
+            android:id="@+id/running_parameters_view"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Acceleretion"
+            android:id="@+id/acceleration_settingsView"
+            android:layout_below="@+id/running_parameters_view"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Proximity"
+            android:id="@+id/proximity_settingsView"
+            android:layout_below="@+id/acceleration_settingsView"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Frequency"
+            android:id="@+id/frequency_settings_view"
+            android:layout_below="@+id/proximity_settingsView"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="proximitiy baloue"
+            android:id="@+id/proximity_value_from_settings"
+            android:layout_above="@+id/frequency_value"
+            android:layout_alignEnd="@+id/acceleration_value_from_settings" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="frequece value"
+            android:id="@+id/frequency_value"
+            android:layout_alignTop="@+id/frequency_settings_view"
+            android:layout_alignStart="@+id/proximity_value_from_settings" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="accelerotion view"
+            android:id="@+id/acceleration_value_from_settings"
+            android:layout_above="@+id/proximity_value_from_settings"
+            android:layout_alignStart="@+id/running_parameters_view" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sensors Values"
+            android:id="@+id/Sensor_Value_text_view"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/frequency_value"
+            android:layout_alignStart="@+id/frequency_value" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="i times pou  tha vgalei o sensora"
+            android:id="@+id/proximity_name_view"
+            android:layout_below="@+id/Sensor_Value_text_view"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="i times pou tha bgali o allos sensoras"
+            android:id="@+id/acceleration_x_name_text_view"
+            android:layout_below="@+id/proximity_name_view"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:onClick="onClickSettings"
+            android:id="@+id/settings_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/start_button"
+            android:minWidth="90dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            android:id="@+id/stop_button"
+            android:minWidth="90dp"
+            android:layout_above="@+id/exit_button"
+            android:layout_toEndOf="@+id/Sensor_Value_text_view" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:id="@+id/start_button"
+            android:minWidth="90dp"
+            android:onClick="onClickStart"
+            android:nestedScrollingEnabled="false"
+            android:layout_above="@+id/settings_button"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="37dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            android:onClick="onClickExit"
+            android:id="@+id/exit_button"
+            android:minWidth="90dp"
+            android:layout_below="@+id/start_button"
+            android:layout_toEndOf="@+id/Sensor_Value_text_view" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="edw tha mpi to fequency"
+            android:id="@+id/acceleration_y_name_text_view"
+            android:layout_below="@+id/acceleration_x_name_text_view"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/acceleration_x_name_text_view"
+            android:layout_toEndOf="@+id/acceleration_x_name_text_view"
+            android:id="@+id/proximity_value" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

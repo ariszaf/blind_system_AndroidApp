@@ -1,0 +1,75 @@
+<resources>
+    <!-- name string and value of the sting  for the menu bar-->
+    <string name="AutomationSystem">Automation System</string>
+    <string name="settings_name">Settings</string>
+
+    <!-- name string and value of the sting  for the spinner-->
+    <string name="title_exit">Exit</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_about">About</string>
+    <string name="title_help">Help</string>
+    <string name="Running_Parameters">Running Parameters</string>
+    <string name="sensor_value_text_view">Sensor Value</string>
+
+
+    <!-- only the view of the sensor wariables -->
+    <string name="proximity_text_view">Proximity</string>
+    <string name="acceleration_x_text_view">Acceleration X</string>
+    <string name="acceleration_y_text_view">Acceleration Y</string>
+    <string name="acceleration_z_text_view">Acceleration Z</string>
+
+
+    <!-- name string and values for button-->
+    <string name="start">Start</string>
+    <string name="settings">Settings</string>
+    <string name="stop">Stop</string>
+    <string name="exit">Exit</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+
+    <string name="acceleration">Acceleration</string>
+    <string name="proximity">Proximity</string>
+    <string name="frequency">Frequency</string>
+    <string name="threshold">Threshold</string>
+    <string name="min_max">Min/Max</string>
+
+    <!-- names for online -->
+    <string name="mode_textView">Online Settings</string>
+    <string name="Ip_TextView">Ip</string>
+    <string name="port_view">Port</string>
+    <string name="Settings_internet">Mode</string>
+    <string name="On">On</string>
+    <string name="Off">Off</string>
+    <string name="online_text_view">Internet</string>
+    <string name="automatic">A</string>
+    <string name="manual">M</string>
+    <!-- min max -->
+    <string name="min">min</string>
+    <string name="max">max</string>
+
+    <string name="off">-</string>
+    <string name="desc">logo</string>
+
+    <string name="aboutapp">Automation System
+Version 1.0 \n\n
+
+Developers \n
+
+- Vasilis - \n
+- Aris - \n
+- Giannis - \n
+- Iakovos - \n
+    </string>
+
+    <string name="help">
+        - This application is designed in order to keep people safe!  \n\n
+        - The Home screen displays information about different values \n
+        as well as real time changes in sensor values. \n\n
+        - Use the Settings to adjust maximum and minimum sensor values, and frequency. \n
+
+        We hope you find this app useful, \n
+        and be careful! :) \n
+    </string>
+
+
+</resources>

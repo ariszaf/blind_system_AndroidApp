@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.psilos.automationsystem.MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- edw einai ta value pou kanw show apo ta settings -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:id="@+id/frequency_value"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignTop="@+id/frequency_settings_view"
+                android:layout_alignStart="@+id/proximity_value_from_settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:id="@+id/acceleration_value_from_settings"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/running_parameters_view"
+                android:layout_alignStart="@+id/proximity_value_from_settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/proximity_value_from_settings"
+                android:layout_above="@+id/frequency_value"
+                android:layout_toEndOf="@+id/start_button" />
+            <!--_________________________________________________________________-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Running_Parameters"
+                android:id="@+id/running_parameters_view"
+                android:layout_below="@+id/online_view"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/acceleration"
+                android:id="@+id/acceleration_settingsView"
+                android:layout_below="@+id/running_parameters_view"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/proximity"
+                android:id="@+id/proximity_settingsView"
+                android:layout_below="@+id/acceleration_settingsView"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/frequency"
+                android:id="@+id/frequency_settings_view"
+                android:layout_below="@+id/proximity_settingsView"
+                android:layout_alignParentStart="true" />
+
+            <!-- edw einia i times ton sensoron-->
+            <TextView
+                android:id="@+id/proximity_value"
+                android:text="@string/off"
+                android:textSize="32sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/proximity_name_view"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/acceleration_x"
+                android:text="@string/off"
+                android:textSize="32sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/acceleration_x_name_text_view"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:id="@+id/acceleration_y"
+                android:text="@string/off"
+                android:textSize="32sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/acceleration_y_name_text_view"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/acceleration_z"
+                android:text="@string/off"
+                android:textSize="32sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/acceleration_z_name_text_view"
+                android:layout_centerHorizontal="true"/>
+
+            <!-- mono ta onomata pou tha ginoun view sto actcity -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/sensor_value_text_view"
+                android:id="@+id/Sensor_Value_text_view"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/frequency_value"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/proximity_text_view"
+                android:id="@+id/proximity_name_view"
+                android:layout_below="@+id/Sensor_Value_text_view"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/acceleration_x_text_view"
+                android:id="@+id/acceleration_x_name_text_view"
+                android:layout_below="@+id/proximity_value"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/acceleration_y_text_view"
+                android:id="@+id/acceleration_y_name_text_view"
+                android:layout_below="@+id/acceleration_x"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="@string/acceleration_z_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/acceleration_z_name_text_view"
+                android:layout_below="@+id/acceleration_y"
+                android:layout_alignEnd="@+id/acceleration_x_name_text_view" />
+
+            <!-- ta buttons -->
+
+            <Button
+                android:id="@+id/start_button"
+                android:text="@string/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/acceleration_z"
+                android:layout_marginTop="16dp"
+                android:minWidth="96dp" />
+
+            <Button
+                android:id="@+id/settings_button"
+                android:text="@string/settings"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start_button"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentStart="true"
+                android:minWidth="96dp" />
+
+            <Button
+                android:id="@+id/stop_button"
+                android:text="@string/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:minWidth="96dp"
+                android:layout_below="@id/acceleration_z"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentEnd="true"
+                android:enabled="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exit"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/exit_button"
+                android:minWidth="96dp"
+                android:layout_below="@id/stop_button"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/online_view"
+                android:text="@string/online_text_view"
+                android:layout_toStartOf="@+id/wifi_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/wifi_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:textOff="@string/On"
+                android:textOn="@string/Off"
+                app:showText="true"
+                android:checked="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

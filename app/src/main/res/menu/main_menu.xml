@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item android:title="mqtt pub"
+      android:id="@+id/id_pub" />
+  <item android:id="@+id/id_settings"
+      android:title="@string/title_settings"
+      android:orderInCategory="1"></item>
+
+  <item android:title="@string/title_about"
+      android:id="@+id/id_about"
+      android:orderInCategory="2"></item>
+
+  <item android:title="@string/title_help"
+      android:id="@+id/id_help"
+      android:orderInCategory="3"></item>
+
+  <item android:title="@string/title_exit"
+      android:id="@+id/id_exit"
+      android:orderInCategory="4"></item>
+
+</menu>
+    <!--this is the name of the string that we  want whos value we wont to return-->

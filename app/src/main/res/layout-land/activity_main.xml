@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.psilos.automationsystem.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Running Parameters"
+            android:id="@+id/running_parameters_view"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Acceleration"
+            android:id="@+id/acceleration_settingsView"
+            android:layout_below="@+id/running_parameters_view"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Proximity"
+            android:id="@+id/proximity_settingsView"
+            android:layout_below="@+id/acceleration_settingsView"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Frequency"
+            android:id="@+id/frequency_settings_view"
+            android:layout_below="@+id/proximity_settingsView"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="frequency value"
+            android:id="@+id/frequency_value"
+            android:layout_alignTop="@+id/frequency_settings_view"
+            android:layout_alignStart="@+id/proximity_value_from_settings" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Proximity value"
+            android:id="@+id/proximity_name_view"
+            android:layout_below="@+id/Sensor_Value_text_view"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Acceleration X coordination value"
+            android:id="@+id/acceleration_x_name_text_view"
+            android:layout_below="@+id/proximity_name_view"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Acceleration Y coordination value"
+            android:id="@+id/acceleration_y_name_text_view"
+            android:layout_below="@+id/acceleration_x_name_text_view" />
+
+        <TextView
+            android:text="Acceleration Z coordination value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/acceleration_z_name_text_view"
+            android:layout_below="@+id/acceleration_y_name_text_view" />
+
+        <TextView
+            android:text="Off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/acceleration_z"
+            android:layout_below="@+id/acceleration_y"
+            android:layout_alignStart="@+id/acceleration_x" />
+
+        <TextView
+            android:text="Off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/acceleration_y"
+            android:layout_below="@+id/acceleration_x"
+            android:layout_alignStart="@+id/acceleration_x" />
+
+        <TextView
+            android:text="Off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/acceleration_x"
+            android:layout_below="@+id/proximity_value"
+            android:layout_alignStart="@+id/proximity_value" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="proximity value"
+            android:id="@+id/proximity_value_from_settings"
+            android:layout_above="@+id/frequency_value"
+            android:layout_toEndOf="@+id/start_button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            android:id="@+id/exit_button"
+            android:minWidth="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/stop_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="acceleration value"
+            android:id="@+id/acceleration_value_from_settings"
+            android:layout_below="@+id/running_parameters_view"
+            android:layout_alignStart="@+id/proximity_value_from_settings" />
+
+        <TextView
+            android:text="Off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/proximity_value"
+            android:layout_above="@+id/acceleration_x_name_text_view"
+            android:layout_toEndOf="@+id/running_parameters_view" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            android:id="@+id/stop_button"
+            android:minWidth="90dp"
+            android:layout_above="@+id/exit_button"
+            android:layout_alignParentEnd="true"
+            android:enabled="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sensors Values"
+            android:id="@+id/Sensor_Value_text_view"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/frequency_value"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:id="@+id/start_button"
+            android:minWidth="90dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/proximity_name_view" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:id="@+id/settings_button"
+            android:minWidth="90dp"
+            android:layout_alignBottom="@+id/acceleration_value_from_settings"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
